@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./app.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</head>
+<body  class="px-4 py-6 md:px-8 lg:px-14">
+  <nav class="md:w-2/4 lg:w-2/5 md:float-right">
+    <ul class="flex justify-between items-center list-none">
+      <li class="font-semibold text-sm text-blue-900">TRIPS</li>
+      <li class="font-semibold text-sm text-blue-900">RECENTLY VIEWED</li>
+      <li class="font-semibold text-sm text-blue-900">BOOKINGS</li>
+      <li>
+        <span class="inline-block h-12 w-12 rounded-full overflow-hidden bg-gray-100">
+          <svg class="h-full w-full text-gray-300" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" />
+          </svg>
+        </span>
+      </li>
+    </ul>
+  </nav>
+  <div class="mt-20 py-8 border-t-2 border-b-2 border-solid">
+    <div class="md:flex md:justify-between">
+      <div>
+        <p class="font-bold text-md">Payment information</p>
+        <span class="text-sm text-gray-400">Choose your method of payment</span>
+      </div>
+      <div class="icons">
+        <div class="inline mr-3">
+          <img src="./images/iconfinder_363_Visa_Credit_Card_logo_4375165.png" class="max-h-7 inline" alt="visa_icon">
+        </div>
+        <div class="inline mr-3">
+          <img src="./images/iconfinder_Mastercard-Curved_70593.png" class="max-h-6 inline" alt="mastercard_icon">
+        </div>
+        <div class="inline mr-3">
+          <img src="./images/iconfinder__Paypal-39_1156727.png" class="max-h-16 inline" alt="paypal_icon">
+        </div>
+      </div>
+    </div>
+    <div class="md:flex md:justify-between md:items-start">
+
+      <div class="py-4 border border-solid rounded-lg card-box text-white box-1">
+        <p class="px-4">CARD NUMBER</p>
+        <p class="px-4 mt-2" id="card-number">1383 3404 4054 34059</p>
+        <div class="my-4">
+          <span class="iconify inline text-2xl" data-icon="system-uicons:waves" data-inline="false"></span>
+          <span class="iconify inline text-5xl chip" data-icon="ion:hardware-chip-outline" data-inline="false"></span>
+        </div>
+        <p class=" px-4 ">EXPIRATION DATE</p>
+        <p class="px-4 mt-2" id="expire">03/24</p>
+        <div class=" px-4 flex justify-between items-center mt-2">
+          <p class="font-semibold">John Doe</p>
+          <img src="./images/iconfinder_Mastercard-Curved_70593.png" class="max-h-6 inline" alt="mastercard_icon">
+        </div>
+      </div>
+      <div class="box-2">
+        <div class="mt-4 md:mt-0">
+          <div class="flex justify-between items-center">
+            <div class="inline mr-2 input-div">
+              <p class="text-sm">Credit card number</p>
+              <div class="border border-solid rounded-sm">
+                <input type='number'class='w-full outline-none focus:ring focus:border-blue-400 py-2 px-2 text-sm bg-gray-200'>
+              </div>
+            </div>
+            <div class="inline input-div" >
+              <p class="text-sm">Expiration date</p>
+              <div class="border border-solid rounded-sm">
+                <input type='number' class='w-full outline-none focus:ring focus:border-blue-400 py-2 text-sm bg-gray-200'>
+              </div>
+            </div>
+          </div>
+  
+          <div class="flex justify-between items-center mt-4">
+            <div class="inline mr-2 input-div ">
+              <p class="text-sm">Security code</p>
+              <div class="border border-solid rounded-sm">
+                <input type='number'class='w-full outline-none focus:ring focus:border-blue-400 py-2 text-sm bg-gray-200'>
+              </div>
+            </div>
+            <div class="inline input-div">
+              <p class="text-sm">Postal code</p>
+              <div class="border border-solid rounded-sm">
+                <input type='number'class='w-full outline-none focus:ring focus:border-blue-400 py-2 text-sm bg-gray-200'>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4">
+            <input type="radio" >
+            <p class="inline text-xs">Use this card for next time purchase</p>
+            <p class="border border-solid bg-blue-500 text-white text-center py-3 mt-3 add-card cursor-pointer">Add card</p>
+          </div>
+  
+        </div>
+      </div> 
+    </div>
+  </div>
+  <div class="mt-6">
+    <div class="flex justify-between items-center my-3">
+      <p>Subtotal</p>
+      <p>#2500.00</p>
+    </div>
+    <div class="flex justify-between items-center my-3">
+      <p>Estimated TAX</p>
+      <p>#500.00</p>
+    </div>
+    <div class="flex justify-between items-center my-3">
+      <p>Promotional Code: Z3DYFYFD7R</p>
+      <p>-#100.00</p>
+    </div>
+    <div class="flex justify-between items-center my-8 py-4 border-t-2">
+      <p class="border border-solid bg-blue-500 text-white text-center py-3 mt-3 add-card cursor-pointer px-3">Complete Payment</p>
+      <p class="font-bold text-md">TOTAL: #2900.00</p>
+    </div>
+  </div>
+</body>
+</html>
