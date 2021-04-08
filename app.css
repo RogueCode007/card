@@ -1,3 +1,6 @@
+body{
+  max-width: 1300px
+}
 .card-box{
   background-image: linear-gradient(to top right, #DB7093, #8A2BE2 );
   font-family: 'Karla', sans-serif;
